@@ -1,6 +1,7 @@
-fn main() {
-    let variable: String = String::from("hello");
-    let other_variable: &str = "francisco";
+use crate::scope::logic;
 
-    println!("{variable} {other_variable}");
+mod scope;
+
+fn main() {
+    logic();
 }
