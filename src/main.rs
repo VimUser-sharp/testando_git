@@ -12,5 +12,8 @@ fn main() {
     io::stdin().read_line(&mut name).expect("falha na entrada");
     clear();
 
+    let p_name = &mut name;
+    *p_name = String::from("cleiton");
+
     logic(&name);
 }
