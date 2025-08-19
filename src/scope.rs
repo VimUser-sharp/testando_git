@@ -1,6 +1,8 @@
-pub fn logic(name: &str) {
+use crate::Person;
+
+pub fn logic(entity: &Person) {
     let variable: String = String::from("hello");
     //let other_variable: &str = "francisco";
 
-    println!("{variable} {name}");
+    println!("{variable} {}\nidade: {}", entity.name, entity.age);
 }
