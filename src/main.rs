@@ -28,10 +28,10 @@ fn main() {
     io::stdin().read_line(&mut input).expect("falha na entrada");
     clear();
 
-<<<<<<< HEAD
+    //<<<<<<< HEAD
     people.age = input.trim().parse().expect("erro ao converter para int");
     clear();
-=======
+    //=======
     let mut p_name = &mut people.name;
     *p_name = String::from("cleiton");
 
@@ -42,7 +42,7 @@ fn main() {
         .trim()
         .parse()
         .expect("erro ao converter para inteiro");
->>>>>>> pointers
+    //>>>>>>> pointers
 
     logic(&people);
 }
