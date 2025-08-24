@@ -100,25 +100,3 @@ fn main() {
 3. Evite `unsafe` a menos que seja estritamente necessário.
 4. Use `Box`/`Rc`/`Arc` ao precisar de alocação dinâmica ou compartilhamento de propriedade.
 5. Nunca derefencie um ponteiro nulo – isso causa undefined behavior.
-
-## 📄 Como transformar este texto em PDF
-1. Salve este conteúdo em um arquivo chamado `ponteiros_rust.md`.
-2. Instale o Pandoc (se ainda não tiver):
-   ```bash
-   # macOS / Linux
-   brew install pandoc  # Homebrew
-   sudo apt-get install pandoc  # Debian/Ubuntu
-   ```
-3. Converta para PDF:
-   ```bash
-   pandoc ponteiros_rust.md -o ponteiros_rust.pdf --pdf-engine=xelatex
-   ```
-   * Para adicionar sumário, use `--toc`.
-   * Pode aplicar um estilo CSS customizado com `-c style.css`.
-
-## Próximos passos (opcional)
-* **Exercícios**: implemente funções que recebem `&mut Vec` e adicionam elementos.
-* **Explorar**: leia a seção “Ownership” e “Borrowing” do *The Rust Book* (gratuito).
-* **Experimentar**: crie um pequeno projeto que usa `Rc<RefCell<T>>` para entender *interior mutability* (avançado).
-
-Se precisar de mais exemplos, explicações detalhadas ou ajuda para gerar o PDF com um layout específico, é só dizer! 🚀
